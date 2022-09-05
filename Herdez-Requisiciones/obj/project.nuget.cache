@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bdf4ItXAq4CWL2AphL6o+PsWONwhLR5hW2J1pnAjBCBnytNIhIuOqyUZ6ZjoWOWg1CtqmfvLd00E2eisS2r/iA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Diego\\source\\repos\\Herdez-Requisiciones\\Herdez-Requisiciones\\Herdez-Requisiciones.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Diego\\.nuget\\packages\\bootstrap\\3.0.0\\bootstrap.3.0.0.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\bootstrap-select\\1.13.18\\bootstrap-select.1.13.18.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\jquery\\1.9.1\\jquery.1.9.1.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\jsonbootstrapmenu\\0.1.0\\jsonbootstrapmenu.0.1.0.nupkg.sha512",
+    "C:\\Users\\Diego\\.nuget\\packages\\newtonsoft.json\\6.0.5\\newtonsoft.json.6.0.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"JsonBootstrapMenu 0.1.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "JsonBootstrapMenu",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Newtonsoft.Json 6.0.5\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

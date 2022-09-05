@@ -1,0 +1,59 @@
+﻿@{ 
+    ViewData["Title"] = "Agregar scroll";
+   
+}
+
+<h1>Herdez</h1>
+<h5>El tipo de cuenta se refiere a como podemos agupar cuentas.
+    Ejemplos: Prestamos, tarjetas de credito, etc.</h5>
+<!--<a asp-action="Crear" class="btn btn-primary mb-3">Crear nuevo</a>--> <!--Boton para el metodo crear en el controlador-->
+
+<form asp-controller="Home" asp-action="Herdez"> 
+
+<table class="table">
+    <tbody>
+            <tr><!--Fila-->
+                <td><!--Columna-->
+                 <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">P2P</button>
+                       <ul class="dropdown-menu" >
+                         <li><a class="dropdown-item" href="#">Usuarios</a></li>
+                         <li><a class="dropdown-item" href="#">Requisitions</a></li>
+                         <li><a class="dropdown-item" href="#">Permisos</a></li>
+
+                         <li class="dropdown dropend"><a class="dropdown-item" href="#" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"> Multilevel Action 1 &raquo;</a>
+                              <ul class="dropdown-menu dropdown">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li class="dropdown dropend">
+                              </ul>
+                         </li>
+                      </ul>
+                  </div>
+                </td>
+            </tr>
+    </tbody>
+</table>
+</form>
+
+@section scripts{
+  <script> 
+      let dropdowns = document.querySelectorAll('.dropdown-toggle')
+         dropdowns.forEach((dd)=>{
+            dd.addEventListener('click', function (e) {
+            var el = this.nextElementSibling
+            el.style.display = el.style.display==='block'?'none':'block'
+        })
+      })
+</script>  
+}
+
+
+
+
+<!-- <select class="selectpicker" name="URL" id="URL" onchange="this.form.submit()">
+                        <option hidden default selected>Opciones</option>
+                        <option value="P2P" >P2P</option>
+                        <option value="Requisiciones" >Requisiciones</option>
+                        <option value="Usuarios" data-tokens="Usuarios">Usuarios</option>
+                    </select>-->
+
